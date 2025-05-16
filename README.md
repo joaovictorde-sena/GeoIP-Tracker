@@ -17,7 +17,6 @@ Projeto desenvolvido como um desafio pessoal O objetivo é criar uma aplicação
 
 ## 🛠️ Como Executar
 
-
 # Clone o repositório
 git clone https://github.com/seu-usuario/ip-address-tracker.git
 
@@ -30,17 +29,20 @@ npm install
 # Inicie o projeto
 npm run dev
 
-
+---
 ## 🔑 Configuração de API
 Crie uma conta gratuita em geo.ipify.org e obtenha sua API key.
 
 Depois, no arquivo App.jsx, substitua:
 
  const apiKey = "SUA_CHAVE_API";
+ 
+---
 
 ## 🧩 Desafios ao Trabalhar com Leaflet pela Primeira Vez
-Trabalhar com o Leaflet pela primeira vez foi interessante, mas apresentou alguns desafios, especialmente para quem vem de um background React:
+Aprender a integrar mapas em uma aplicação React foi um baita aprendizado. No começo pareceu complicado, mas aos poucos fui entendendo como tudo se conecta. Trabalhar com uma lib de mapas como o Leaflet me tirou da zona de confortoe me fez encarar problemas de um jeito bem diferente do que eu estava acostumado.
 
+---
 ## ❗ Dificuldades enfrentadas:
 MapContainer não atualiza posição automaticamente:
 
@@ -60,12 +62,14 @@ Ao tentar renderizar o mapa antes da resposta da API, as coordenadas vinham unde
 
 Solução: Verificação condicional (ipData && ipData.location && ...) antes de acessar os dados.
 
+---
 
 ## Integração entre React e Leaflet:
 
-Exigiu um pouco de adaptação para usar hooks como useMap dentro de componentes controlados.
+Usar o React junto com o Leaflet me fez quebrar um pouco a cabeça no começo. Tive que entender como encaixar coisas como o useMap dentro dos componentes e lidar com o jeito diferente que o Leaflet funciona.
 
 ## ✅ Funcionalidades
+
 Buscar IP ou domínio e mostrar a localização no mapa
 
 Exibir endereço IP, localização, fuso horário e provedor (ISP)
