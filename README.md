@@ -29,19 +29,19 @@ npm install
 
 # Inicie o projeto
 npm run dev
-Acesse em http://localhost:5173.
 
-🔑 Configuração de API
+
+## 🔑 Configuração de API
 Crie uma conta gratuita em geo.ipify.org e obtenha sua API key.
 
 Depois, no arquivo App.jsx, substitua:
 
-### const apiKey = "SUA_CHAVE_API";
+ const apiKey = "SUA_CHAVE_API";
 
-🧩 Desafios ao Trabalhar com Leaflet pela Primeira Vez
+## 🧩 Desafios ao Trabalhar com Leaflet pela Primeira Vez
 Trabalhar com o Leaflet pela primeira vez foi interessante, mas apresentou alguns desafios, especialmente para quem vem de um background React:
 
-❗ Dificuldades enfrentadas:
+## ❗ Dificuldades enfrentadas:
 MapContainer não atualiza posição automaticamente:
 
 O mapa não se movia mesmo após atualizar as coordenadas.
@@ -61,11 +61,11 @@ Ao tentar renderizar o mapa antes da resposta da API, as coordenadas vinham unde
 Solução: Verificação condicional (ipData && ipData.location && ...) antes de acessar os dados.
 
 
-Integração entre React e Leaflet:
+## Integração entre React e Leaflet:
 
 Exigiu um pouco de adaptação para usar hooks como useMap dentro de componentes controlados.
 
-✅ Funcionalidades
+## ✅ Funcionalidades
 Buscar IP ou domínio e mostrar a localização no mapa
 
 Exibir endereço IP, localização, fuso horário e provedor (ISP)
