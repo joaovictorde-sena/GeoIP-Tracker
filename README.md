@@ -42,8 +42,18 @@ Depois, no arquivo App.jsx, substitua:
 ## 🧩 Desafios ao Trabalhar com Leaflet pela Primeira Vez
 Aprender a integrar mapas em uma aplicação React foi um baita aprendizado. No começo pareceu complicado, mas aos poucos fui entendendo como tudo se conecta. Trabalhar com uma lib de mapas como o Leaflet me tirou da zona de confortoe me fez encarar problemas de um jeito bem diferente do que eu estava acostumado.
 
+Durante esse processo, precisei da ajuda de um desenvolvedor mais experiente para resolver dois desafios importantes:
+
+Fazer o MapContainer atualizar a posição automaticamente ao buscar um novo IP. O mapa não se movia mesmo com as coordenadas atualizadas. 
+
+Evitar o crash da aplicação ao renderizar o mapa antes da resposta da API. As coordenadas vinham como undefined e causavam erro. Com orientação, implementei uma verificação condicional (ipData && ipData.location && ...) antes de acessar os dados, garantindo que o mapa só fosse renderizado com as informações carregadas corretamente.
+
+Esses aprendizados fizeram toda a diferença para o funcionamento da aplicação.
+
+
 ---
 ## ❗ Dificuldades enfrentadas:
+
 MapContainer não atualiza posição automaticamente:
 
 O mapa não se movia mesmo após atualizar as coordenadas.
