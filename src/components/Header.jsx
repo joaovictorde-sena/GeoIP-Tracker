@@ -13,7 +13,7 @@ const Header = ({ onSearch, ipData }) => {
 
   return (
     <div className="header">
-      <h1 className="title">IP Address Tracker</h1>
+      <h1 className="title">GeoIP Tracker</h1>
       <form onSubmit={handleSubmit} className="search-form">
         <input
           type="text"
