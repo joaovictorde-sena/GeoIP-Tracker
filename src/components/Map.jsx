@@ -16,11 +16,16 @@ L.Icon.Default.mergeOptions({
 const Map = ({ lat, lng }) => {
   return (
     <div className="map-container">
-      <MapContainer center={[lat, lng]} zoom={13} scrollWheelZoom className="leaflet-map">
+      <MapContainer
+        center={[lat, lng]}
+        zoom={13}
+        scrollWheelZoom
+        className="leaflet-map"
+      >
         <MapUpdater lat={lat} lng={lng} />
         <TileLayer
-          attribution='&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>'
-          url="https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png"
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         <Marker position={[lat, lng]}>
           <Popup>Localização encontrada</Popup>
