@@ -11,7 +11,8 @@ Projeto desenvolvido como um desafio pessoal O objetivo é criar uma aplicação
 - [Leaflet.js](https://leafletjs.com/) — biblioteca de mapas
 - [React Leaflet](https://react-leaflet.js.org/) — integração do Leaflet com React
 - [Geo.ipify API](https://geo.ipify.org/) — para busca de dados de IP
-- CSS tradicional 
+- CSS tradicional
+- **OpenStreetMap** — fonte dos mapas na visualização do Leaflet
 
 ---
 
